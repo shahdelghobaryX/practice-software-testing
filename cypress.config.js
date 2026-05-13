@@ -27,6 +27,10 @@ module.exports = defineConfig({
 
     specPattern: "**/*.feature",
 
+    env: {
+      tags: "not @ignore"
+    },
+
     setupNodeEvents,
 
     baseUrl: "https://practicesoftwaretesting.com"
