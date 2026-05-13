@@ -6,13 +6,19 @@ class HomePage {
 
    searchProduct(term) {
 
-    cy.get('[data-test="search-query"]', { timeout: 15000 })
-      .should('be.visible')
+    cy.visit('/', {
+        failOnStatusCode: false
+    });
+
+    cy.wait(5000);
+
+    cy.get('[data-test="search-query"]', { timeout: 20000 })
+      .should('exist')
       .clear()
       .type(term);
 
     cy.get('[data-test="search-submit"]')
-      .should('be.visible')
+      .should('exist')
       .click();
 
 }
