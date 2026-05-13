@@ -1,0 +1,14 @@
+{
+  "searchTerms": {
+    "valid": "Pliers",
+    "noResults": "xyznonexistentproduct123",
+    "partial": "Ham"
+  },
+  "filters": {
+    "category": "Hand Tools",
+    "minPrice": "10",
+    "maxPrice": "50"
+  },
+  "productName": "Pliers",
+  "cartQuantity": 2
+}

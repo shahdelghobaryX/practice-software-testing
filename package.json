@@ -1,0 +1,16 @@
+{
+  "name": "software-testing-project",
+  "version": "1.0.0",
+  "description": "Cypress test suite for practicesoftwaretesting.com",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8"
+  }
+}
