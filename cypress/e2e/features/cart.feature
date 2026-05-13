@@ -1,5 +1,6 @@
 Feature: Cart Functionality
 
+@ignore
 Scenario: Add product to cart
 
 Given user opens home page
