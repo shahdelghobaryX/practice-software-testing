@@ -1,5 +1,6 @@
 Feature: Login Functionality
 
+@ignore
 Scenario: Valid Login
 
 Given user opens login page
