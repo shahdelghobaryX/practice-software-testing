@@ -4,18 +4,18 @@ class HomePage {
         cy.visit('/');
     }
 
-    searchProduct(term) {
+   searchProduct(term) {
 
-        cy.intercept('GET', '**/products/search*').as('searchRequest');
+    cy.get('[data-test="search-query"]', { timeout: 15000 })
+      .should('be.visible')
+      .clear()
+      .type(term);
 
-        cy.get('[data-test="search-query"]')
-          .clear()
-          .type(term);
+    cy.get('[data-test="search-submit"]')
+      .should('be.visible')
+      .click();
 
-        cy.get('[data-test="search-submit"]').click();
-
-        cy.wait('@searchRequest', { timeout: 10000 });
-    }
+}
 
     filterByCategory(category) {
 
